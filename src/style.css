@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Configura o modo escuro do Tailwind para funcionar quando a classe .dark estiver ativa */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Registra as fontes personalizadas nas classes font-sans e font-mono do Tailwind */
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
